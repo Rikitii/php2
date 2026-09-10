@@ -2,28 +2,29 @@
 
 $number = $_POST["number"];
 
-echo "Tabla del 4 con FOR";
+echo "Tabla del " . $number . " con FOR";
 
 echo "<br>";
 
-for ($i = 0; $i <= $number; $i += 2) {
+for ($i = 0; $i <= 10; $i += 2) {
 
-    echo "4 x " . $i . " = " . (4 * $i) . "<br>";
-
+    $result=($number * $i);
+    echo   $number . " x " . $i . " = " . $result; echo "<br>"; 
 }
 
 echo "<br>";
-echo "<br>";
+echo "<br>"; 
 
-echo "Tabla del 4 con WHILE";
+echo "Tabla del " . $number . " con WHILE";
 
 echo "<br>";
 
 $i = 0;
 
-while ($i <= $number) {
+while ($i <= 10) {
 
-    echo "4 x " . $i . " = " . (4 * $i) . "<br>";
+    $result=($number * $i);
+    echo   $number . " x " . $i . " = " . $result; echo "<br>"; 
 
     $i += 1;
 }

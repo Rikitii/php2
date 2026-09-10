@@ -7,6 +7,7 @@
 </head>
 <body>
     <form action="resultado.php" method="post">
+    Digite el numero a multiplicar:
     <input type="number" name="number"/>
     <input type="submit" value="Enviar" />
     </form>

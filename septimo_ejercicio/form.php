@@ -25,32 +25,22 @@
       ];
 
         $cant = $_POST["cant"];
-        $nombre = $_POST["nombre"];
-
-        for ($a = 1; $a <= $cant; $a++) {
-
-        echo "Encuestado # " . $a;
-        echo "<br>";
-
-
-        for($i=1;$i<= 10;$i++){ 
-        ?> Pregunta <?php 
-        echo ($i . $preguntas); ?> (1 a 5):
-        <input type="string" name="nombre"/>
-      <input type="number" name="p" 
-        <?php 
-        echo $i;
-        ?>
-        min="1"
-        max="5"
-      />
+         foreach ($preguntas as $pregunta) {
+          echo "Pregunta: " ;
+          echo $pregunta;
+          echo "<br>";
+          echo "<br>";
+          
+        ?>  
+        
+        (1 a 5):
+      <input type="number" name="p" min="1" max="5"/>
       <br /><br />
       <?php 
-      }
+        };  
 
       echo "<br>";
       echo "<br>";
-      }  
       ?>
 
       <input type="submit" value="Enviar" />

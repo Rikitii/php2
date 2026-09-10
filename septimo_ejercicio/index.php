@@ -8,8 +8,8 @@
 <body>
     <form action="form.php" method="post">
 
+    Digite la cantidad de personas a encuestar:
     <input type="number" name="cant"/>
-
     <input type="submit" value="Enviar" />
     </form>
 </body>
